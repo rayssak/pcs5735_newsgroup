@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk7"/>
+	<classpathentry kind="lib" path="lib/lucene-analyzers-3.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-3.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-memory-3.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queries-3.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queryparser-3.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-common-2.0.0-alpha.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="lib/weka.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

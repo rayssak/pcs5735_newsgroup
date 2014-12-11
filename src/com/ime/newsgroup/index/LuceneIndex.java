@@ -58,7 +58,6 @@ public class LuceneIndex {
 			
 			doc.add(new Field("post", post.getMessage(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
 			doc.add(new Field("category", post.getCategory(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
-//			doc.add(new Field("category", "?", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
 			indexWriter.addDocument(doc);
 			
 		} catch (IOException ioException) {
@@ -94,7 +93,8 @@ public class LuceneIndex {
 
 		try {
 
-			reader = IndexReader.open(FSDirectory.open(new File(LUCENE_INDEX_PATH + "11-12-2014")));
+//			reader = IndexReader.open(FSDirectory.open(new File(LUCENE_INDEX_PATH + "mini_newsgroups")));
+			reader = IndexReader.open(FSDirectory.open(new File(LUCENE_INDEX_PATH + "20_newsgroups")));
 			IndexSearcher searcher = new IndexSearcher(reader);
 			Query query = new MatchAllDocsQuery();
 

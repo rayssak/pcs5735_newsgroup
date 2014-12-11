@@ -93,7 +93,7 @@ public class LuceneIndex {
 
 		try {
 
-			reader = IndexReader.open(FSDirectory.open(new File(LUCENE_INDEX_PATH + "08-12-2014")));
+			reader = IndexReader.open(FSDirectory.open(new File(LUCENE_INDEX_PATH + "11-12-2014")));
 			IndexSearcher searcher = new IndexSearcher(reader);
 			Query query = new MatchAllDocsQuery();
 

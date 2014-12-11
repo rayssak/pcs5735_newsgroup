@@ -58,6 +58,7 @@ public class LuceneIndex {
 			
 			doc.add(new Field("post", post.getMessage(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
 			doc.add(new Field("category", post.getCategory(), Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
+//			doc.add(new Field("category", "?", Field.Store.YES, Field.Index.ANALYZED, Field.TermVector.YES));
 			indexWriter.addDocument(doc);
 			
 		} catch (IOException ioException) {
@@ -121,7 +122,6 @@ public class LuceneIndex {
 		try {
 			
 			Query q = queryParser.parse("a*");
-//			Directory directory = new SimpleFSDirectory(new File(LUCENE_INDEX_PATH));
 			Directory directory = new SimpleFSDirectory(new File(LUCENE_INDEX_PATH + "08-12-2014"));
 			IndexSearcher indexSearcher = new IndexSearcher(IndexReader.open(directory));
 			TopDocs topDocs = indexSearcher.search(q, 100000);

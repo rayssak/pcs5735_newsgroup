@@ -1,7 +1,5 @@
 package com.ime.newsgroup.util;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.Charset;
@@ -25,6 +23,8 @@ public class FileUtil {
 	public static final String HADOOP_PATH;
 	public static final String ARFF_FILE;
 	public static final String PROJECT_PATH;
+	public static final String WEKA_TRAIN;
+	public static final String WEKA_TEST;
 	
 	private static final Properties properties = new Properties();
 	
@@ -45,6 +45,8 @@ public class FileUtil {
 		HADOOP_PATH = properties.getProperty("HADOOP_PATH");
 		ARFF_FILE = properties.getProperty("ARFF_FILE");
 		PROJECT_PATH = properties.getProperty("PROJECT_PATH");
+		WEKA_TRAIN = properties.getProperty("WEKA_TRAIN");
+		WEKA_TEST = properties.getProperty("WEKA_TEST");
 	      
 	}
 	

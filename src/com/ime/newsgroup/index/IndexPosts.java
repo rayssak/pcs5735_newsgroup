@@ -10,6 +10,14 @@ import org.apache.lucene.document.Document;
 import com.ime.newsgroup.util.FileUtil;
 import com.ime.newsgroup.util.NewsgroupPostTO;
 
+/**
+ * 
+ * @author rayssak
+ * @reason Insert the post messages (only the message without header) into the
+ * 		   Lucene index. The message is already inserted pre-processed 
+ * 		   (normalized, tokenized, without stop words, stemming).
+ *
+ */
 public class IndexPosts {
 	
 	private static LuceneIndex index = new LuceneIndex();

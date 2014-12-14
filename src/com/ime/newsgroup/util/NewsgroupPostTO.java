@@ -1,5 +1,11 @@
 package com.ime.newsgroup.util;
 
+/**
+ * 
+ * @author rayssak
+ * @reason JavaBean for the newsgroup message files.
+ *
+ */
 public class NewsgroupPostTO {
 	
 	private String message;

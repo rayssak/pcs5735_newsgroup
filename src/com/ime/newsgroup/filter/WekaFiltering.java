@@ -13,6 +13,20 @@ import weka.filters.unsupervised.attribute.StringToWordVector;
 
 import com.ime.newsgroup.util.FileUtil;
 
+/**
+ * 
+ * @author rayssak
+ * @reason Filters the generated .arff Weka file using the StringToWordVector 
+ * 		   (this is required to use as input of the Machine Learning algorithms).
+ * 
+ * 		   Obs.: if this filtering is done by the Weka interface, it will not be 
+ * 		   possible to use both the train and the test files in any algorithm 
+ * 		   since the interface will generate vectorized files with different 
+ * 		   attributes, making them incompatible. 
+ * 
+ *         Please use this class for this case!
+ *
+ */
 public class WekaFiltering {
 	
 	public static void main(String[] args) {

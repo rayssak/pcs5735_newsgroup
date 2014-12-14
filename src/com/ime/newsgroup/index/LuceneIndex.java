@@ -34,6 +34,13 @@ import org.apache.lucene.util.Version;
 import com.ime.newsgroup.util.FileUtil;
 import com.ime.newsgroup.util.NewsgroupPostTO;
 
+/**
+ * 
+ * @author rayssak
+ * @reason Class responsible for all the required Lucene methods, including
+ * 		   index, searches and stemming (Brazilian Portuguese).
+ *
+ */
 public class LuceneIndex {
 	
 	private String LUCENE_INDEX_PATH = FileUtil.LUCENE_INDEX_PATH;

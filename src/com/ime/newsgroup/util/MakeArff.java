@@ -8,6 +8,12 @@ import org.apache.lucene.document.Document;
 
 import com.ime.newsgroup.index.LuceneIndex;
 
+/**
+ * 
+ * @author rayssak
+ * @reason Makes the appropriate .arff file to use in the Weka interface.
+ *
+ */
 public class MakeArff {
 	
 	public static void main(String[] args) {

@@ -15,6 +15,12 @@ import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * 
+ * @author rayssak
+ * @reason Class responsible for reading system properties.
+ *
+ */
 public class FileUtil {
 
 	public static final String LINE_SEPARATOR = System.getProperty("line.separator");
